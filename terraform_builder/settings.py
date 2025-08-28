@@ -122,3 +122,24 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# GitHub API Configuration
+# Ustaw swój GitHub token dla większych limitów API (5000 requestów/godzinę zamiast 60)
+# Wygeneruj token na: https://github.com/settings/tokens
+# GITHUB_TOKEN = 'ghp_your_token_here'
+
+# Opcjonalny GitHub token - aplikacja będzie działać bez niego, ale z mniejszymi limitami
+GITHUB_TOKEN = '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'
+
+# Cache settings for GitHub API responses
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'terraform-builder-cache',
+        'TIMEOUT': 3600,  # 1 hora cache dla zasobów GitHub
+        'OPTIONS': {
+            'MAX_ENTRIES': 1000,
+        }
+    }
+}

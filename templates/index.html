@@ -6,55 +6,297 @@
     <title>Azure Terraform Builder</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .sidebar { width: 300px; background: #f8f9fa; }
+        body {
+            background-color: #f5f7fa;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        }
+        .sidebar { 
+            width: 320px; 
+            background: #ffffff;
+            height: 100vh;
+            overflow-y: auto;
+            border-right: 1px solid #e1e8ed;
+            box-shadow: 0 0 15px rgba(0,0,0,0.03);
+        }
         .canvas-area { 
-            background: #fff; 
-            min-height: 500px;
-            border: 2px dashed #dee2e6;
-            background-image: radial-gradient(circle, #dee2e6 1px, transparent 1px);
+            background: #ffffff; 
+            min-height: 600px;
+            border: 1px solid #e1e8ed;
+            background-image: radial-gradient(circle, #f0f3f7 1px, transparent 1px);
             background-size: 20px 20px;
+            position: relative;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.02);
         }
         .resource-card {
-            background: white;
-            border: 1px solid #dee2e6;
-            border-radius: 8px;
-            padding: 10px;
-            margin: 5px 0;
+            background: #ffffff;
+            border: 1px solid #e1e8ed;
+            border-radius: 4px;
+            padding: 10px 12px;
+            margin: 2px 0;
             cursor: grab;
+            transition: all 0.2s ease;
+            font-size: 0.9rem;
         }
-        .resource-card:hover { border-color: #0d6efd; }
+        .resource-card:hover { 
+            border-color: #4a90e2; 
+            box-shadow: 0 2px 8px rgba(74, 144, 226, 0.1);
+            background: #fafbfc;
+        }
+        .dropped-resource {
+            position: absolute;
+            background: #ffffff;
+            border: 1px solid #4a90e2;
+            padding: 12px;
+            border-radius: 4px;
+            min-width: 160px;
+            cursor: move;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            font-size: 0.9rem;
+        }
+        .dropped-resource:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+        }
+        .category-header {
+            background: #4a90e2;
+            color: #ffffff;
+            padding: 8px 12px;
+            margin: 8px 0 2px 0;
+            border-radius: 3px;
+            font-weight: 500;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .category-header:hover {
+            background: #357abd;
+        }
+        .category-header.collapsed {
+            background: #8a9ba8;
+        }
+        .subcategory-header {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #5a6c7d;
+            margin: 6px 0 2px 0;
+            padding: 6px 10px;
+            background: #f5f7fa;
+            border-radius: 3px;
+            border-left: 3px solid #4a90e2;
+        }
+        .resources-section {
+            margin-left: 8px;
+            border-left: 1px solid #f0f3f7;
+            padding-left: 8px;
+        }
+        .loading {
+            text-align: center;
+            color: #8a9ba8;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+        .stats-badge {
+            background: #e8f2ff;
+            color: #4a90e2;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        .search-box {
+            margin-bottom: 12px;
+            position: sticky;
+            top: 0;
+            background: #ffffff;
+            padding: 12px 0;
+            z-index: 100;
+            border-bottom: 1px solid #f0f3f7;
+        }
+        .search-box input {
+            border-radius: 3px;
+            border: 1px solid #e1e8ed;
+            padding: 6px 12px;
+            font-size: 0.85rem;
+            width: 100%;
+        }
+        .search-box input:focus {
+            outline: none;
+            border-color: #4a90e2;
+            box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.1);
+        }
+        .terraform-output {
+            background: #2b3137;
+            color: #e6e6e6;
+            border-radius: 4px;
+            font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            max-height: 400px;
+            overflow-y: auto;
+            border: 1px solid #e1e8ed;
+        }
+        .btn-generate {
+            background: #4a90e2;
+            border: none;
+            color: #ffffff;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 3px;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+        .btn-generate:hover {
+            background: #357abd;
+            color: #ffffff;
+        }
+        .btn-outline-secondary {
+            border: 1px solid #8a9ba8;
+            color: #5a6c7d;
+            background: #ffffff;
+            padding: 8px 16px;
+            border-radius: 3px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .btn-outline-secondary:hover {
+            background: #f5f7fa;
+            border-color: #5a6c7d;
+            color: #5a6c7d;
+        }
+        .btn-outline-info {
+            border: 1px solid #4a90e2;
+            color: #4a90e2;
+            background: #ffffff;
+            padding: 8px 16px;
+            border-radius: 3px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .btn-outline-info:hover {
+            background: #e8f2ff;
+            color: #4a90e2;
+        }
+        .btn-outline-primary {
+            border: 1px solid #4a90e2;
+            color: #4a90e2;
+            background: #ffffff;
+            padding: 6px 12px;
+            border-radius: 3px;
+            font-size: 0.85rem;
+        }
+        .btn-outline-primary:hover {
+            background: #e8f2ff;
+            color: #4a90e2;
+        }
+        .btn-outline-success {
+            border: 1px solid #52c41a;
+            color: #52c41a;
+            background: #ffffff;
+            padding: 6px 12px;
+            border-radius: 3px;
+            font-size: 0.85rem;
+        }
+        .btn-outline-success:hover {
+            background: #f6ffed;
+            color: #52c41a;
+        }
+        .resource-technical-name {
+            font-size: 0.7rem;
+            color: #8a9ba8;
+            font-family: 'SF Mono', Monaco, monospace;
+        }
+        .bg-primary {
+            background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%) !important;
+        }
+        .text-center h5 {
+            color: #5a6c7d;
+            font-weight: 500;
+        }
+        .text-muted {
+            color: #8a9ba8 !important;
+        }
     </style>
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 bg-primary text-white p-3">
-                <h4>Azure Terraform Builder MVP</h4>
+            <div class="col-12 bg-primary text-white p-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h3 class="mb-1">Azure Terraform Builder</h3>
+                        <small class="opacity-75">Visual Infrastructure as Code Designer</small>
+                    </div>
+                    <div class="text-end">
+                        <div class="stats-badge">
+                            Resources: <span id="resource-count">0</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="sidebar col-3 p-3">
-                <h6>Azure Resources</h6>
-                <div class="resource-card" draggable="true" data-resource="vm">
-                    🖥️ Virtual Machine
+        <div class="row g-0">
+            <div class="sidebar p-3">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h6 class="mb-0">Azure Resources</h6>
+                    <small class="text-muted" id="total-categories">Loading...</small>
                 </div>
-                <div class="resource-card" draggable="true" data-resource="storage">
-                    💾 Storage Account  
+                
+                <div class="search-box">
+                    <input type="text" class="form-control" id="search-resources" placeholder="Search resources...">
                 </div>
-                <div class="resource-card" draggable="true" data-resource="database">
-                    🗄️ Database
+                
+                <div id="resources-container" class="loading">
+                    <div class="spinner-border spinner-border-sm me-2" role="status"></div>
+                    Loading Azure resources...
                 </div>
             </div>
-            <div class="col-9">
-                <div class="p-3">
-                    <button class="btn btn-success" onclick="generateTerraform()">Generate Terraform</button>
+            <div class="col">
+                <div class="p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                            <button class="btn btn-generate me-2" onclick="generateTerraform()">
+                                Generate Terraform
+                            </button>
+                            <button class="btn btn-outline-secondary me-2" onclick="clearCanvas()">
+                                Clear
+                            </button>
+                            <button class="btn btn-outline-info" onclick="showTemplates()">
+                                Templates
+                            </button>
+                        </div>
+                        <div>
+                            <small class="text-muted">Drag resources from sidebar to canvas</small>
+                        </div>
+                    </div>
+                    
+                    <div class="canvas-area p-4" id="canvas" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="text-center text-muted">
+                            <h5 class="mb-3">Canvas</h5>
+                            <p>Drag Azure resources here to design your infrastructure</p>
+                            <small>Resources will be connected automatically in Terraform configuration</small>
+                        </div>
+                    </div>
                 </div>
-                <div class="canvas-area p-3" id="canvas" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <p class="text-muted">Drag resources here</p>
-                </div>
-                <div class="mt-3 p-3">
-                    <h6>Generated Terraform:</h6>
-                    <pre id="terraformCode" class="bg-light p-3">// Code will appear here</pre>
+                
+                <div class="px-4 pb-4">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h6 class="mb-0">Generated Terraform Configuration</h6>
+                        <div>
+                            <button class="btn btn-sm btn-outline-primary" onclick="copyToClipboard()">
+                                Copy
+                            </button>
+                            <button class="btn btn-sm btn-outline-success ms-1" onclick="downloadTerraform()">
+                                Download
+                            </button>
+                        </div>
+                    </div>
+                    <small class="text-muted d-block mb-2">
+                        Ready to deploy with: <code>terraform init && terraform apply</code>
+                    </small>
+                    <pre id="terraformCode" class="terraform-output p-3">// Your Terraform configuration will appear here
+// Add resources to the canvas above to get started</pre>
                 </div>
             </div>
         </div>
@@ -62,56 +304,409 @@
 
     <script>
         let resources = [];
+        let availableResources = {};
+        let collapsedCategories = new Set();
         
-        function allowDrop(ev) { ev.preventDefault(); }
+        // Load hierarchical resources
+        async function loadResources() {
+            try {
+                const response = await fetch('/api/resources/?format=hierarchical');
+                const data = await response.json();
+                availableResources = data.resources;
+                
+                document.getElementById('total-categories').textContent = `${data.total_categories} categories`;
+                
+                renderHierarchicalResources(availableResources);
+                
+            } catch (error) {
+                console.error('Error loading resources:', error);
+                document.getElementById('resources-container').innerHTML = 
+                    '<div class="text-danger">Failed to load resources</div>';
+            }
+        }
+        
+        function renderHierarchicalResources(resourcesData) {
+            const container = document.getElementById('resources-container');
+            container.innerHTML = '';
+            
+            Object.entries(resourcesData).forEach(([categoryName, categoryData]) => {
+                // Category header
+                const categoryHeader = document.createElement('div');
+                categoryHeader.className = `category-header ${collapsedCategories.has(categoryName) ? 'collapsed' : ''}`;
+                categoryHeader.innerHTML = `
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>${categoryData.icon} ${categoryName}</span>
+                        <span>${collapsedCategories.has(categoryName) ? '▶' : '▼'}</span>
+                    </div>
+                `;
+                categoryHeader.onclick = () => toggleCategory(categoryName);
+                container.appendChild(categoryHeader);
+                
+                // Category content
+                if (!collapsedCategories.has(categoryName)) {
+                    const categoryContent = document.createElement('div');
+                    categoryContent.className = 'resources-section';
+                    categoryContent.id = `category-${categoryName}`;
+                    
+                    Object.entries(categoryData.subcategories).forEach(([subcategoryName, resources]) => {
+                        // Subcategory header
+                        const subcategoryHeader = document.createElement('div');
+                        subcategoryHeader.className = 'subcategory-header';
+                        subcategoryHeader.textContent = subcategoryName;
+                        categoryContent.appendChild(subcategoryHeader);
+                        
+                        // Resources
+                        resources.forEach(resource => {
+                            const resourceCard = document.createElement('div');
+                            resourceCard.className = 'resource-card';
+                            resourceCard.draggable = true;
+                            resourceCard.dataset.resource = resource.name;
+                            resourceCard.dataset.category = categoryName;
+                            resourceCard.dataset.subcategory = subcategoryName;
+                            
+                            resourceCard.innerHTML = `
+                                <div class="d-flex align-items-center">
+                                    <span class="me-2" style="font-size: 1.1em;">${resource.icon}</span>
+                                    <div class="flex-grow-1">
+                                        <div class="fw-medium">${resource.display}</div>
+                                        <div class="resource-technical-name">${resource.name}</div>
+                                    </div>
+                                </div>
+                            `;
+                            
+                            categoryContent.appendChild(resourceCard);
+                        });
+                    });
+                    
+                    container.appendChild(categoryContent);
+                }
+            });
+            
+            addDragListeners();
+        }
+        
+        function toggleCategory(categoryName) {
+            if (collapsedCategories.has(categoryName)) {
+                collapsedCategories.delete(categoryName);
+            } else {
+                collapsedCategories.add(categoryName);
+            }
+            renderHierarchicalResources(availableResources);
+        }
+        
+        // Search functionality
+        document.getElementById('search-resources').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            
+            if (searchTerm === '') {
+                renderHierarchicalResources(availableResources);
+                return;
+            }
+            
+            // Filter resources based on search
+            const filteredResources = {};
+            
+            Object.entries(availableResources).forEach(([categoryName, categoryData]) => {
+                const filteredSubcategories = {};
+                
+                Object.entries(categoryData.subcategories).forEach(([subcategoryName, resources]) => {
+                    const filteredResourcesList = resources.filter(resource =>
+                        resource.display.toLowerCase().includes(searchTerm) ||
+                        resource.name.toLowerCase().includes(searchTerm) ||
+                        subcategoryName.toLowerCase().includes(searchTerm) ||
+                        categoryName.toLowerCase().includes(searchTerm)
+                    );
+                    
+                    if (filteredResourcesList.length > 0) {
+                        filteredSubcategories[subcategoryName] = filteredResourcesList;
+                    }
+                });
+                
+                if (Object.keys(filteredSubcategories).length > 0) {
+                    filteredResources[categoryName] = {
+                        ...categoryData,
+                        subcategories: filteredSubcategories
+                    };
+                }
+            });
+            
+            // Clear collapsed state for search
+            collapsedCategories.clear();
+            renderHierarchicalResources(filteredResources);
+        });
+        
+        function addDragListeners() {
+            document.addEventListener('dragstart', function(e) {
+                if (e.target.classList.contains('resource-card')) {
+                    e.dataTransfer.setData("text", JSON.stringify({
+                        name: e.target.dataset.resource,
+                        category: e.target.dataset.category,
+                        subcategory: e.target.dataset.subcategory
+                    }));
+                    e.target.style.opacity = '0.5';
+                }
+            });
+            
+            document.addEventListener('dragend', function(e) {
+                if (e.target.classList.contains('resource-card')) {
+                    e.target.style.opacity = '1';
+                }
+            });
+        }
+        
+        function allowDrop(ev) { 
+            ev.preventDefault(); 
+        }
         
         function drop(ev) {
             ev.preventDefault();
-            const resourceType = ev.dataTransfer.getData("text");
-            addResource(resourceType, ev.offsetX, ev.offsetY);
+            const resourceData = JSON.parse(ev.dataTransfer.getData("text"));
+            
+            const canvasRect = document.getElementById('canvas').getBoundingClientRect();
+            const x = Math.max(10, ev.clientX - canvasRect.left - 80);
+            const y = Math.max(10, ev.clientY - canvasRect.top - 30);
+            
+            addResource(resourceData, x, y);
         }
         
-        document.addEventListener('dragstart', function(e) {
-            if (e.target.classList.contains('resource-card')) {
-                e.dataTransfer.setData("text", e.target.dataset.resource);
-            }
-        });
-        
-        function addResource(type, x, y) {
-            const resource = { type, x, y, id: Date.now() };
+        function addResource(resourceData, x, y) {
+            // Find the resource details
+            let resourceInfo = null;
+            
+            Object.values(availableResources).forEach(categoryData => {
+                Object.values(categoryData.subcategories).forEach(resources => {
+                    const found = resources.find(r => r.name === resourceData.name);
+                    if (found) {
+                        resourceInfo = {
+                            ...found,
+                            parentCategory: resourceData.category,
+                            subcategory: resourceData.subcategory
+                        };
+                    }
+                });
+            });
+            
+            if (!resourceInfo) return;
+            
+            const resource = { 
+                type: resourceData.name, 
+                x, 
+                y, 
+                id: Date.now() + Math.random(),
+                display: resourceInfo.display,
+                icon: resourceInfo.icon,
+                category: resourceData.category,
+                subcategory: resourceData.subcategory
+            };
             resources.push(resource);
             
             const canvas = document.getElementById('canvas');
+            
+            // Hide placeholder
+            const placeholder = canvas.querySelector('.text-center');
+            if (placeholder && resources.length === 1) {
+                placeholder.style.display = 'none';
+            }
+            
             const div = document.createElement('div');
-            div.style.position = 'absolute';
+            div.className = 'dropped-resource';
             div.style.left = x + 'px';
             div.style.top = y + 'px';
-            div.style.background = 'white';
-            div.style.border = '2px solid #0d6efd';
-            div.style.padding = '10px';
-            div.style.borderRadius = '8px';
-            div.innerHTML = getResourceIcon(type) + ' ' + type;
+            div.innerHTML = `
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="flex-grow-1">
+                        <div class="d-flex align-items-center mb-1">
+                            <span class="me-2">${resourceInfo.icon}</span>
+                            <strong>${resourceInfo.display}</strong>
+                        </div>
+                        <small class="text-muted d-block">${resource.type}</small>
+                        <small class="text-muted">${resource.subcategory}</small>
+                    </div>
+                    <button class="btn btn-sm btn-outline-danger ms-2" onclick="removeResource('${resource.id}')" title="Remove">×</button>
+                </div>
+            `;
+            div.dataset.resourceId = resource.id;
+            
+            makeDraggable(div, resource);
             canvas.appendChild(div);
+            updateResourceCount();
         }
         
-        function getResourceIcon(type) {
-            const icons = { vm: '🖥️', storage: '💾', database: '🗄️' };
-            return icons[type] || '📦';
+        function makeDraggable(element, resource) {
+            let isDragging = false;
+            let startX, startY, initialMouseX, initialMouseY;
+            
+            element.addEventListener('mousedown', function(e) {
+                if (e.target.tagName === 'BUTTON') return;
+                isDragging = true;
+                startX = resource.x;
+                startY = resource.y;
+                initialMouseX = e.clientX;
+                initialMouseY = e.clientY;
+                element.style.cursor = 'grabbing';
+            });
+            
+            document.addEventListener('mousemove', function(e) {
+                if (!isDragging) return;
+                
+                const deltaX = e.clientX - initialMouseX;
+                const deltaY = e.clientY - initialMouseY;
+                
+                resource.x = Math.max(0, startX + deltaX);
+                resource.y = Math.max(0, startY + deltaY);
+                
+                element.style.left = resource.x + 'px';
+                element.style.top = resource.y + 'px';
+            });
+            
+            document.addEventListener('mouseup', function() {
+                if (isDragging) {
+                    isDragging = false;
+                    element.style.cursor = 'move';
+                }
+            });
+        }
+        
+        function removeResource(id) {
+            resources = resources.filter(r => r.id != id);
+            const element = document.querySelector(`[data-resource-id="${id}"]`);
+            if (element) {
+                element.remove();
+            }
+            
+            if (resources.length === 0) {
+                const placeholder = document.querySelector('#canvas .text-center');
+                if (placeholder) placeholder.style.display = 'block';
+            }
+            
+            updateResourceCount();
+        }
+        
+        function clearCanvas() {
+            resources = [];
+            const canvas = document.getElementById('canvas');
+            const droppedResources = canvas.querySelectorAll('.dropped-resource');
+            droppedResources.forEach(el => el.remove());
+            
+            const placeholder = canvas.querySelector('.text-center');
+            if (placeholder) placeholder.style.display = 'block';
+            
+            updateResourceCount();
+            document.getElementById('terraformCode').textContent = '// Your Terraform configuration will appear here\n// Add resources to the canvas above to get started';
+        }
+        
+        function updateResourceCount() {
+            document.getElementById('resource-count').textContent = resources.length;
         }
         
         function generateTerraform() {
-            let code = 'terraform {\n  required_providers {\n    azurerm = {\n      source = "hashicorp/azurerm"\n    }\n  }\n}\n\n';
+            if (resources.length === 0) {
+                document.getElementById('terraformCode').textContent = '// Add some resources to generate Terraform configuration\n// Drag resources from the sidebar to the canvas';
+                return;
+            }
             
-            resources.forEach((resource, i) => {
-                code += `resource "azurerm_${resource.type}" "${resource.type}_${i}" {\n`;
-                code += `  name = "${resource.type}_${i}"\n`;
-                code += `  location = "East US"\n`;
-                code += `  resource_group_name = "rg-terraform"\n`;
-                code += '}\n\n';
+            let code = `terraform {
+  required_version = ">= 1.0"
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~> 4.0"
+    }
+  }
+}
+
+provider "azurerm" {
+  features {}
+}
+
+# Resource Group - Foundation
+resource "azurerm_resource_group" "main" {
+  name     = "rg-terraform-builder"
+  location = "East US"
+}
+
+`;
+            
+            // Group resources by category
+            const resourcesByCategory = {};
+            resources.forEach(resource => {
+                if (!resourcesByCategory[resource.category]) {
+                    resourcesByCategory[resource.category] = [];
+                }
+                resourcesByCategory[resource.category].push(resource);
+            });
+            
+            // Generate code by category
+            Object.entries(resourcesByCategory).forEach(([category, categoryResources]) => {
+                code += `# ${category.toUpperCase()} Resources\n`;
+                
+                categoryResources.forEach((resource, i) => {
+                    const resourceName = resource.type.replace('azurerm_', '');
+                    const uniqueName = `${resourceName}_${resource.id.toString().slice(-4)}`;
+                    
+                    code += `resource "${resource.type}" "${uniqueName}" {
+  name                = "${uniqueName}"
+  location            = azurerm_resource_group.main.location
+  resource_group_name = azurerm_resource_group.main.name
+  
+  # ${resource.display} - ${resource.subcategory}
+  # Canvas position: x=${resource.x}, y=${resource.y}
+  
+  tags = {
+    Environment = "Development"
+    CreatedBy   = "TerraformBuilder"
+    Category    = "${resource.category}"
+  }
+}
+
+`;
+                });
+                
+                code += '\n';
             });
             
             document.getElementById('terraformCode').textContent = code;
         }
+        
+        function copyToClipboard() {
+            const code = document.getElementById('terraformCode').textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                const btn = event.target;
+                const originalText = btn.innerHTML;
+                btn.innerHTML = 'Copied!';
+                btn.classList.add('btn-success');
+                btn.classList.remove('btn-outline-primary');
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.classList.remove('btn-success');
+                    btn.classList.add('btn-outline-primary');
+                }, 2000);
+            });
+        }
+        
+        function downloadTerraform() {
+            const code = document.getElementById('terraformCode').textContent;
+            const blob = new Blob([code], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'main.tf';
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+        }
+        
+        function showTemplates() {
+            alert('Templates feature coming soon!\n\nWill include:\n• Web App + Database\n• VM with Networking\n• Container Solution\n• Secure Storage Setup');
+        }
+        
+        // Initialize app
+        document.addEventListener('DOMContentLoaded', function() {
+            loadResources();
+        });
     </script>
 </body>
 </html>
