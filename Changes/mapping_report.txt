@@ -1,0 +1,35 @@
+=== RAPORT MAPOWANIA IKON AZURE ===
+
+STATYSTYKI OGÓLNE:
+Łącznie zasobów: 1108
+Zmapowanych: 1107
+Nie zmapowanych: 1
+Wysokie zaufanie: 144
+Dokładne mapowania: 37
+Rozmyte mapowania: 1070
+
+ZASOBY BEZ IKON:
+- azurerm_lb
+
+ZASOBY Z NISKIM ZAUFANIEM (<70%):
+- azurerm_active_directory_domain_service_replica_set: 10224-icon-service-Active-Directory-Connect-Health.svg (0.44)
+- azurerm_active_directory_domain_service_trust: 00050-icon-service-App-Service-Domains.svg (0.47)
+- azurerm_api_management_api_diagnostic: 10042-icon-service-API-Management-Services.svg (0.62)
+- azurerm_api_management_api_operation: 10042-icon-service-API-Management-Services.svg (0.62)
+- azurerm_api_management_api_operation_policy: 10042-icon-service-API-Management-Services.svg (0.51)
+- azurerm_api_management_api_operation_tag: 10042-icon-service-API-Management-Services.svg (0.52)
+- azurerm_api_management_api_policy: 10042-icon-service-API-Management-Services.svg (0.58)
+- azurerm_api_management_api_release: 10042-icon-service-API-Management-Services.svg (0.62)
+- azurerm_api_management_api_schema: 10042-icon-service-API-Management-Services.svg (0.64)
+- azurerm_api_management_api_tag: 10042-icon-service-API-Management-Services.svg (0.60)
+- azurerm_api_management_api_tag_description: 10042-icon-service-API-Management-Services.svg (0.47)
+- azurerm_api_management_api_version_set: 10042-icon-service-API-Management-Services.svg (0.48)
+- azurerm_api_management_authorization_server: 02503-icon-service-SCVMM-Management-Servers.svg (0.55)
+- azurerm_api_management_backend: 10042-icon-service-API-Management-Services.svg (0.62)
+- azurerm_api_management_certificate: 10042-icon-service-API-Management-Services.svg (0.60)
+- azurerm_api_management_custom_domain: 10042-icon-service-API-Management-Services.svg (0.51)
+- azurerm_api_management_diagnostic: 10042-icon-service-API-Management-Services.svg (0.62)
+- azurerm_api_management_email_template: 10042-icon-service-API-Management-Services.svg (0.52)
+- azurerm_api_management_gateway: 10042-icon-service-API-Management-Services.svg (0.61)
+- azurerm_api_management_gateway_api: 10042-icon-service-API-Management-Services.svg (0.61)
+... (i więcej)

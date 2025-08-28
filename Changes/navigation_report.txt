@@ -1,0 +1,44 @@
+=== RAPORT NAWIGACJI AZURE ===
+
+STATYSTYKI OGÓLNE:
+Kategorie: 19
+Usługi: 179
+Zasoby: 1108
+
+MAPOWANIE IKON:
+Zmapowane usługi: 171
+Nie zmapowane: 8
+Wysokie zaufanie: 116
+Średnie zaufanie: 52
+Niskie zaufanie: 3
+
+KATEGORIE:
+AI + Machine Learning: 8 usług, 35 zasobów
+Analytics: 13 usług, 137 zasobów
+Compute: 13 usług, 61 zasobów
+Containers: 6 usług, 29 zasobów
+Databases: 10 usług, 101 zasobów
+Developer Tools: 7 usług, 27 zasobów
+Hybrid + multicloud: 3 usług, 14 zasobów
+Identity: 5 usług, 11 zasobów
+Integration: 5 usług, 85 zasobów
+Internet of Things: 8 usług, 36 zasobów
+Management and Governance: 24 usług, 139 zasobów
+Media: 2 usług, 14 zasobów
+Migration: 4 usług, 24 zasobów
+Mixed Reality: 1 usług, 1 zasobów
+Mobile: 2 usług, 14 zasobów
+Networking: 34 usług, 167 zasobów
+Security: 8 usług, 61 zasobów
+Storage: 14 usług, 69 zasobów
+Web: 12 usług, 83 zasobów
+
+USŁUGI BEZ IKON:
+- Health Bot (AI + Machine Learning)
+- Azure Cache for Redis Enterprise (Databases)
+- System Center Virtual Machine Manager (Hybrid + multicloud)
+- Azure RBAC (Identity)
+- Logz.io (Management and Governance)
+- New Relic (Management and Governance)
+- Cloud NGFW by Palo Alto Networks (Networking)
+- NGINX (Web)

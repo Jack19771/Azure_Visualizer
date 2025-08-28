@@ -1,0 +1,326 @@
+{
+  "json_structure": {
+    "total_resources": 1108,
+    "sample_resource_key": "azurerm_aadb2c_directory",
+    "sample_resource_structure": [
+      "attributes",
+      "blocks",
+      "schema_version"
+    ],
+    "has_icon_field": false,
+    "first_5_resources": [
+      "azurerm_aadb2c_directory",
+      "azurerm_active_directory_domain_service",
+      "azurerm_active_directory_domain_service_replica_set",
+      "azurerm_active_directory_domain_service_trust",
+      "azurerm_advanced_threat_protection"
+    ]
+  },
+  "icons_structure": {
+    "total_icons": 693,
+    "folders": {
+      "ai + machine learning": {
+        "count": 33,
+        "sample_files": [
+          "00028-icon-service-Batch-AI.svg",
+          "00030-icon-service-Machine-Learning-Studio-(Classic)-Web-Services.svg",
+          "00031-icon-service-Genomics.svg"
+        ]
+      },
+      "analytics": {
+        "count": 17,
+        "sample_files": [
+          "00009-icon-service-Log-Analytics-Workspaces.svg",
+          "00039-icon-service-Event-Hubs.svg",
+          "00042-icon-service-Stream-Analytics-Jobs.svg"
+        ]
+      },
+      "app services": {
+        "count": 8,
+        "sample_files": [
+          "00046-icon-service-App-Service-Plans.svg",
+          "00049-icon-service-App-Service-Certificates.svg",
+          "00050-icon-service-App-Service-Domains.svg"
+        ]
+      },
+      "azure ecosystem": {
+        "count": 3,
+        "sample_files": [
+          "01038-icon-service-Collaborative-Service.svg",
+          "02354-icon-service-Applens.svg",
+          "02573-icon-service-Azure-Hybrid-Center.svg"
+        ]
+      },
+      "azure stack": {
+        "count": 7,
+        "sample_files": [
+          "00965-icon-service-Multi-Tenancy.svg",
+          "10108-icon-service-Infrastructure-Backup.svg",
+          "10109-icon-service-Capacity.svg"
+        ]
+      },
+      "blockchain": {
+        "count": 6,
+        "sample_files": [
+          "10210-icon-service-Blockchain-Applications.svg",
+          "10364-icon-service-Outbound-Connection.svg",
+          "10366-icon-service-Azure-Blockchain-Service.svg"
+        ]
+      },
+      "compute": {
+        "count": 40,
+        "sample_files": [
+          "00195-icon-service-Maintenance-Configuration.svg",
+          "00328-icon-service-Host-Pools.svg",
+          "00329-icon-service-Application-Group.svg"
+        ]
+      },
+      "containers": {
+        "count": 7,
+        "sample_files": [
+          "03331-icon-service-Azure-Red-Hat-OpenShift.svg",
+          "10023-icon-service-Kubernetes-Services.svg",
+          "10031-icon-service-Batch-Accounts.svg"
+        ]
+      },
+      "databases": {
+        "count": 27,
+        "sample_files": [
+          "00036-icon-service-SQL-Data-Warehouses.svg",
+          "00606-icon-service-Azure-Synapse-Analytics.svg",
+          "02390-icon-service-Azure-SQL.svg"
+        ]
+      },
+      "devops": {
+        "count": 14,
+        "sample_files": [
+          "00012-icon-service-Application-Insights.svg",
+          "00563-icon-service-Change-Analysis.svg",
+          "02373-icon-service-CloudTest.svg"
+        ]
+      },
+      "general": {
+        "count": 96,
+        "sample_files": [
+          "00004-icon-service-Cost-Management-and-Billing.svg",
+          "00456-icon-service-Preview-Features.svg",
+          "10001-icon-service-All-Resources.svg"
+        ]
+      },
+      "hybrid + multicloud": {
+        "count": 6,
+        "sample_files": [
+          "03248-icon-service-Azure-Operator-5G-Core.svg",
+          "03324-icon-service-Azure-Operator-Nexus.svg",
+          "03333-icon-service-Azure-Operator-Insights.svg"
+        ]
+      },
+      "identity": {
+        "count": 32,
+        "sample_files": [
+          "00321-icon-service-Security.svg",
+          "00919-icon-service-Administrative-Units.svg",
+          "01084-icon-service-Verifiable-Credentials.svg"
+        ]
+      },
+      "integration": {
+        "count": 29,
+        "sample_files": [
+          "00036-icon-service-SQL-Data-Warehouses.svg",
+          "00555-icon-service-Integration-Service-Environments.svg",
+          "00691-icon-service-Azure-Databox-Gateway.svg"
+        ]
+      },
+      "intune": {
+        "count": 18,
+        "sample_files": [
+          "00399-icon-service-Device-Security-Apple.svg",
+          "00399-icon-service-Device-Security-Google.svg",
+          "00399-icon-service-Device-Security-Windows.svg"
+        ]
+      },
+      "iot": {
+        "count": 29,
+        "sample_files": [
+          "00030-icon-service-Machine-Learning-Studio-(Classic)-Web-Services.svg",
+          "00039-icon-service-Event-Hubs.svg",
+          "00042-icon-service-Stream-Analytics-Jobs.svg"
+        ]
+      },
+      "management + governance": {
+        "count": 33,
+        "sample_files": [
+          "00001-icon-service-Monitor.svg",
+          "00002-icon-service-Alerts.svg",
+          "00003-icon-service-Advisor.svg"
+        ]
+      },
+      "menu": {
+        "count": 1,
+        "sample_files": [
+          "00787-icon-service-Keys.svg"
+        ]
+      },
+      "migrate": {
+        "count": 6,
+        "sample_files": [
+          "00004-icon-service-Cost-Management-and-Billing.svg",
+          "00017-icon-service-Recovery-Services-Vaults.svg",
+          "00691-icon-service-Azure-Databox-Gateway.svg"
+        ]
+      },
+      "migration": {
+        "count": 1,
+        "sample_files": [
+          "10133-icon-service-Azure-Database-Migration-Services.svg"
+        ]
+      },
+      "mixed reality": {
+        "count": 2,
+        "sample_files": [
+          "00698-icon-service-Remote-Rendering.svg",
+          "10352-icon-service-Spatial-Anchor-Accounts.svg"
+        ]
+      },
+      "mobile": {
+        "count": 3,
+        "sample_files": [
+          "03335-icon-service-Power-Platform.svg",
+          "10035-icon-service-App-Services.svg",
+          "10045-icon-service-Notification-Hubs.svg"
+        ]
+      },
+      "monitor": {
+        "count": 11,
+        "sample_files": [
+          "00001-icon-service-Monitor.svg",
+          "00007-icon-service-Activity-Log.svg",
+          "00008-icon-service-Diagnostics-Settings.svg"
+        ]
+      },
+      "networking": {
+        "count": 51,
+        "sample_files": [
+          "00056-icon-service-CDN-Profiles.svg",
+          "00271-icon-service-Azure-Firewall-Manager.svg",
+          "00272-icon-service-Azure-Firewall-Policy.svg"
+        ]
+      },
+      "new icons": {
+        "count": 26,
+        "sample_files": [
+          "029029174-icon-service-Load-Balancer-Hub.svg",
+          "029109619-icon-service-Toolchain-Orchestrator.svg",
+          "029109619-icon-service-Workload-Orchestration.svg"
+        ]
+      },
+      "other": {
+        "count": 134,
+        "sample_files": [
+          "00327-icon-service-Azure-Virtual-Desktop.svg",
+          "00412-icon-service-SSH-Keys.svg",
+          "00469-icon-service-Internet-Analyzer-Profiles.svg"
+        ]
+      },
+      "security": {
+        "count": 15,
+        "sample_files": [
+          "00378-icon-service-Detonation.svg",
+          "02247-icon-service-Microsoft-Defender-for-IoT.svg",
+          "03336-icon-service-Microsoft-Defender-EASM.svg"
+        ]
+      },
+      "storage": {
+        "count": 19,
+        "sample_files": [
+          "00017-icon-service-Recovery-Services-Vaults.svg",
+          "00691-icon-service-Azure-Databox-Gateway.svg",
+          "00776-icon-service-Azure-HCP-Cache.svg"
+        ]
+      },
+      "web": {
+        "count": 19,
+        "sample_files": [
+          "00046-icon-service-App-Service-Plans.svg",
+          "00049-icon-service-App-Service-Certificates.svg",
+          "00050-icon-service-App-Service-Domains.svg"
+        ]
+      }
+    },
+    "folder_names": [
+      "ai + machine learning",
+      "analytics",
+      "app services",
+      "azure ecosystem",
+      "azure stack",
+      "blockchain",
+      "compute",
+      "containers",
+      "databases",
+      "devops",
+      "general",
+      "hybrid + multicloud",
+      "identity",
+      "integration",
+      "intune",
+      "iot",
+      "management + governance",
+      "menu",
+      "migrate",
+      "migration",
+      "mixed reality",
+      "mobile",
+      "monitor",
+      "networking",
+      "new icons",
+      "other",
+      "security",
+      "storage",
+      "web"
+    ]
+  },
+  "sample_data": {
+    "sample_file": "sample_azure_resources.json",
+    "sample_resources": [
+      "azurerm_aadb2c_directory",
+      "azurerm_active_directory_domain_service",
+      "azurerm_active_directory_domain_service_replica_set",
+      "azurerm_active_directory_domain_service_trust",
+      "azurerm_advanced_threat_protection",
+      "azurerm_ai_services",
+      "azurerm_analysis_services_server",
+      "azurerm_api_connection",
+      "azurerm_api_management",
+      "azurerm_api_management_api"
+    ],
+    "original_size": 1108,
+    "sample_size": 10
+  },
+  "resource_names": [
+    {
+      "resource_key": "azurerm_aadb2c_directory",
+      "extracted_service_name": "Aadb2C Directory",
+      "original_service_part": "aadb2c_directory"
+    },
+    {
+      "resource_key": "azurerm_active_directory_domain_service",
+      "extracted_service_name": "Active Directory Domain Service",
+      "original_service_part": "active_directory_domain_service"
+    },
+    {
+      "resource_key": "azurerm_active_directory_domain_service_replica_set",
+      "extracted_service_name": "Active Directory Domain Service Replica Set",
+      "original_service_part": "active_directory_domain_service_replica_set"
+    },
+    {
+      "resource_key": "azurerm_active_directory_domain_service_trust",
+      "extracted_service_name": "Active Directory Domain Service Trust",
+      "original_service_part": "active_directory_domain_service_trust"
+    },
+    {
+      "resource_key": "azurerm_advanced_threat_protection",
+      "extracted_service_name": "Advanced Threat Protection",
+      "original_service_part": "advanced_threat_protection"
+    }
+  ]
+}

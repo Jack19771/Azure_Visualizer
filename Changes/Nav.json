@@ -1,0 +1,2099 @@
+{
+  "metadata": {
+    "generated_at": "2025-08-28",
+    "total_categories": 19,
+    "total_services": 179,
+    "total_resources": 1108
+  },
+  "categories": {
+    "AI + Machine Learning": {
+      "name": "AI + Machine Learning",
+      "services_count": 8,
+      "total_resources": 35,
+      "category_icon_folder": "ai + machine learning",
+      "services": [
+        {
+          "name": "Azure AI services",
+          "resource_type": "azurerm_ai_services",
+          "resource_count": 1,
+          "icon": {
+            "path": "app services/10035-icon-service-App-Services.svg",
+            "filename": "10035-icon-service-App-Services.svg",
+            "confidence": 0.87,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure API for FHIR",
+          "resource_type": "azurerm_healthcare_service",
+          "resource_count": 1,
+          "icon": {
+            "path": "integration/10212-icon-service-Azure-API-for-FHIR.svg",
+            "filename": "10212-icon-service-Azure-API-for-FHIR.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Bot Service",
+          "resource_type": "azurerm_bot_channel_alexa",
+          "resource_count": 14,
+          "icon": {
+            "path": "ai + machine learning/10165-icon-service-Bot-Services.svg",
+            "filename": "10165-icon-service-Bot-Services.svg",
+            "confidence": 0.957,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Cognitive Search",
+          "resource_type": "azurerm_search_service",
+          "resource_count": 2,
+          "icon": {
+            "path": "ai + machine learning/10044-icon-service-Cognitive-Search.svg",
+            "filename": "10044-icon-service-Cognitive-Search.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Health Data Services",
+          "resource_type": "azurerm_healthcare_dicom_service",
+          "resource_count": 5,
+          "icon": {
+            "path": "other/02356-icon-service-Arc-Data-services.svg",
+            "filename": "02356-icon-service-Arc-Data-services.svg",
+            "confidence": 0.811,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure Machine Learning",
+          "resource_type": "azurerm_machine_learning_compute_cluster",
+          "resource_count": 8,
+          "icon": {
+            "path": "ai + machine learning/10166-icon-service-Machine-Learning.svg",
+            "filename": "10166-icon-service-Machine-Learning.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Cognitive Services",
+          "resource_type": "azurerm_cognitive_account",
+          "resource_count": 3,
+          "icon": {
+            "path": "ai + machine learning/10162-icon-service-Cognitive-Services.svg",
+            "filename": "10162-icon-service-Cognitive-Services.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Health Bot",
+          "resource_type": "azurerm_healthbot",
+          "resource_count": 1,
+          "icon": null
+        }
+      ]
+    },
+    "Analytics": {
+      "name": "Analytics",
+      "services_count": 13,
+      "total_resources": 137,
+      "category_icon_folder": "analytics",
+      "services": [
+        {
+          "name": "Azure Analysis Services",
+          "resource_type": "azurerm_analysis_services_server",
+          "resource_count": 1,
+          "icon": {
+            "path": "analytics/10148-icon-service-Analysis-Services.svg",
+            "filename": "10148-icon-service-Analysis-Services.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Data Explorer",
+          "resource_type": "azurerm_kusto_attached_database_configuration",
+          "resource_count": 12,
+          "icon": {
+            "path": "analytics/10145-icon-service-Azure-Data-Explorer-Clusters.svg",
+            "filename": "10145-icon-service-Azure-Data-Explorer-Clusters.svg",
+            "confidence": 0.743,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Data Share",
+          "resource_type": "azurerm_data_share",
+          "resource_count": 6,
+          "icon": {
+            "path": "storage/10098-icon-service-Data-Shares.svg",
+            "filename": "10098-icon-service-Data-Shares.svg",
+            "confidence": 0.952,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Databricks",
+          "resource_type": "azurerm_databricks_access_connector",
+          "resource_count": 5,
+          "icon": {
+            "path": "analytics/10787-icon-service-Azure-Databricks.svg",
+            "filename": "10787-icon-service-Azure-Databricks.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Resource Graph",
+          "resource_type": "azurerm_graph_account",
+          "resource_count": 2,
+          "icon": {
+            "path": "general/10007-icon-service-Resource-Groups.svg",
+            "filename": "10007-icon-service-Resource-Groups.svg",
+            "confidence": 0.828,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure Synapse Analytics",
+          "resource_type": "azurerm_synapse_firewall_rule",
+          "resource_count": 22,
+          "icon": {
+            "path": "analytics/00606-icon-service-Azure-Synapse-Analytics.svg",
+            "filename": "00606-icon-service-Azure-Synapse-Analytics.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Data Factory",
+          "resource_type": "azurerm_data_factory",
+          "resource_count": 50,
+          "icon": {
+            "path": "analytics/10126-icon-service-Data-Factories.svg",
+            "filename": "10126-icon-service-Data-Factories.svg",
+            "confidence": 0.846,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Elastic",
+          "resource_type": "azurerm_elastic_cloud_elasticsearch",
+          "resource_count": 1,
+          "icon": {
+            "path": "other/03190-icon-service-Elastic-SAN.svg",
+            "filename": "03190-icon-service-Elastic-SAN.svg",
+            "confidence": 0.778,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Event Hubs",
+          "resource_type": "azurerm_eventhub",
+          "resource_count": 9,
+          "icon": {
+            "path": "analytics/00039-icon-service-Event-Hubs.svg",
+            "filename": "00039-icon-service-Event-Hubs.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "HDInsight",
+          "resource_type": "azurerm_hdinsight_hadoop_cluster",
+          "resource_count": 5,
+          "icon": {
+            "path": "analytics/10142-icon-service-HD-Insight-Clusters.svg",
+            "filename": "10142-icon-service-HD-Insight-Clusters.svg",
+            "confidence": 0.643,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Microsoft Purview",
+          "resource_type": "azurerm_purview_account",
+          "resource_count": 1,
+          "icon": {
+            "path": "other/03250-icon-service-Microsoft-Dev-Box.svg",
+            "filename": "03250-icon-service-Microsoft-Dev-Box.svg",
+            "confidence": 0.647,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Power BI Embedded",
+          "resource_type": "azurerm_powerbi_embedded",
+          "resource_count": 1,
+          "icon": {
+            "path": "analytics/03332-icon-service-Power-BI-Embedded.svg",
+            "filename": "03332-icon-service-Power-BI-Embedded.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Stream Analytics",
+          "resource_type": "azurerm_stream_analytics_cluster",
+          "resource_count": 22,
+          "icon": {
+            "path": "analytics/00042-icon-service-Stream-Analytics-Jobs.svg",
+            "filename": "00042-icon-service-Stream-Analytics-Jobs.svg",
+            "confidence": 0.865,
+            "mapping_method": "exact_name_match"
+          }
+        }
+      ]
+    },
+    "Compute": {
+      "name": "Compute",
+      "services_count": 13,
+      "total_resources": 61,
+      "category_icon_folder": "compute",
+      "services": [
+        {
+          "name": "Azure Center for SAP solutions",
+          "resource_type": "azurerm_workloads_sap_discovery_virtual_instance",
+          "resource_count": 3,
+          "icon": {
+            "path": "monitor/00438-icon-service-Azure-Monitors-for-SAP-Solutions.svg",
+            "filename": "00438-icon-service-Azure-Monitors-for-SAP-Solutions.svg",
+            "confidence": 0.84,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure Compute Gallery",
+          "resource_type": "azurerm_gallery_application",
+          "resource_count": 5,
+          "icon": {
+            "path": "compute/02864-icon-service-Azure-Compute-Galleries.svg",
+            "filename": "02864-icon-service-Azure-Compute-Galleries.svg",
+            "confidence": 0.875,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure Dedicated Host",
+          "resource_type": "azurerm_dedicated_host",
+          "resource_count": 2,
+          "icon": {
+            "path": "other/02322-icon-service-Dedicated-HSM.svg",
+            "filename": "02322-icon-service-Dedicated-HSM.svg",
+            "confidence": 0.889,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure Functions",
+          "resource_type": "azurerm_function_app",
+          "resource_count": 10,
+          "icon": {
+            "path": "compute/10029-icon-service-Function-Apps.svg",
+            "filename": "10029-icon-service-Function-Apps.svg",
+            "confidence": 0.818,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure VMware Solution",
+          "resource_type": "azurerm_vmware_cluster",
+          "resource_count": 4,
+          "icon": {
+            "path": "other/01219-icon-service-Azure-VMware-Solution.svg",
+            "filename": "01219-icon-service-Azure-VMware-Solution.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Virtual Desktop",
+          "resource_type": "azurerm_virtual_desktop_application",
+          "resource_count": 8,
+          "icon": {
+            "path": "other/00327-icon-service-Azure-Virtual-Desktop.svg",
+            "filename": "00327-icon-service-Azure-Virtual-Desktop.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Batch",
+          "resource_type": "azurerm_batch_account",
+          "resource_count": 5,
+          "icon": {
+            "path": "ai + machine learning/00028-icon-service-Batch-AI.svg",
+            "filename": "00028-icon-service-Batch-AI.svg",
+            "confidence": 0.769,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Proximity Placement Groups",
+          "resource_type": "azurerm_proximity_placement_group",
+          "resource_count": 1,
+          "icon": {
+            "path": "networking/10365-icon-service-Proximity-Placement-Groups.svg",
+            "filename": "10365-icon-service-Proximity-Placement-Groups.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "SSH Keys",
+          "resource_type": "azurerm_ssh_public_key",
+          "resource_count": 1,
+          "icon": {
+            "path": "other/00412-icon-service-SSH-Keys.svg",
+            "filename": "00412-icon-service-SSH-Keys.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Service Fabric",
+          "resource_type": "azurerm_service_fabric_cluster",
+          "resource_count": 2,
+          "icon": {
+            "path": "compute/02370-icon-service-Managed-Service-Fabric.svg",
+            "filename": "02370-icon-service-Managed-Service-Fabric.svg",
+            "confidence": 0.778,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Virtual Machine Images",
+          "resource_type": "azurerm_image",
+          "resource_count": 1,
+          "icon": {
+            "path": "compute/10021-icon-service-Virtual-Machine.svg",
+            "filename": "10021-icon-service-Virtual-Machine.svg",
+            "confidence": 0.811,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Virtual Machine Scale Sets",
+          "resource_type": "azurerm_linux_virtual_machine_scale_set",
+          "resource_count": 5,
+          "icon": {
+            "path": "compute/10021-icon-service-Virtual-Machine.svg",
+            "filename": "10021-icon-service-Virtual-Machine.svg",
+            "confidence": 0.732,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Virtual Machines",
+          "resource_type": "azurerm_availability_set",
+          "resource_count": 14,
+          "icon": {
+            "path": "compute/10028-icon-service-Virtual-Machines-(Classic).svg",
+            "filename": "10028-icon-service-Virtual-Machines-(Classic).svg",
+            "confidence": 0.8,
+            "mapping_method": "exact_name_match"
+          }
+        }
+      ]
+    },
+    "Containers": {
+      "name": "Containers",
+      "services_count": 6,
+      "total_resources": 29,
+      "category_icon_folder": "other",
+      "services": [
+        {
+          "name": "Azure Kubernetes Fleet Manager",
+          "resource_type": "azurerm_kubernetes_fleet_manager",
+          "resource_count": 4,
+          "icon": {
+            "path": "other/03134-icon-service-Kubernetes-Fleet-Manager.svg",
+            "filename": "03134-icon-service-Kubernetes-Fleet-Manager.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Kubernetes Service (AKS)",
+          "resource_type": "azurerm_kubernetes_cluster",
+          "resource_count": 5,
+          "icon": {
+            "path": "compute/10023-icon-service-Kubernetes-Services.svg",
+            "filename": "10023-icon-service-Kubernetes-Services.svg",
+            "confidence": 0.927,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure Red Hat OpenShift",
+          "resource_type": "azurerm_redhat_openshift_cluster",
+          "resource_count": 1,
+          "icon": {
+            "path": "containers/03331-icon-service-Azure-Red-Hat-OpenShift.svg",
+            "filename": "03331-icon-service-Azure-Red-Hat-OpenShift.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Container Apps",
+          "resource_type": "azurerm_container_app",
+          "resource_count": 8,
+          "icon": {
+            "path": "other/02884-icon-service-Worker-Container-App.svg",
+            "filename": "02884-icon-service-Worker-Container-App.svg",
+            "confidence": 0.765,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Container Instances",
+          "resource_type": "azurerm_container_group",
+          "resource_count": 1,
+          "icon": {
+            "path": "compute/10104-icon-service-Container-Instances.svg",
+            "filename": "10104-icon-service-Container-Instances.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Container Registry",
+          "resource_type": "azurerm_container_connected_registry",
+          "resource_count": 10,
+          "icon": {
+            "path": "containers/10105-icon-service-Container-Registries.svg",
+            "filename": "10105-icon-service-Container-Registries.svg",
+            "confidence": 0.895,
+            "mapping_method": "fuzzy_match"
+          }
+        }
+      ]
+    },
+    "Databases": {
+      "name": "Databases",
+      "services_count": 10,
+      "total_resources": 101,
+      "category_icon_folder": "databases",
+      "services": [
+        {
+          "name": "Azure Cache for Redis",
+          "resource_type": "azurerm_redis_cache",
+          "resource_count": 5,
+          "icon": {
+            "path": "databases/10137-icon-service-Cache-Redis.svg",
+            "filename": "10137-icon-service-Cache-Redis.svg",
+            "confidence": 0.846,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure Cache for Redis Enterprise",
+          "resource_type": "azurerm_redis_enterprise_cluster",
+          "resource_count": 2,
+          "icon": null
+        },
+        {
+          "name": "Azure Cosmos DB",
+          "resource_type": "azurerm_cosmosdb_account",
+          "resource_count": 21,
+          "icon": {
+            "path": "databases/10121-icon-service-Azure-Cosmos-DB.svg",
+            "filename": "10121-icon-service-Azure-Cosmos-DB.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Cosmos DB for PostgreSQL",
+          "resource_type": "azurerm_cosmosdb_postgresql_cluster",
+          "resource_count": 5,
+          "icon": {
+            "path": "other/01848-icon-service-Arc-PostgreSQL .svg",
+            "filename": "01848-icon-service-Arc-PostgreSQL .svg",
+            "confidence": 0.632,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure Database for MariaDB",
+          "resource_type": "azurerm_mariadb_configuration",
+          "resource_count": 5,
+          "icon": {
+            "path": "databases/10123-icon-service-Azure-Database-MariaDB-Server.svg",
+            "filename": "10123-icon-service-Azure-Database-MariaDB-Server.svg",
+            "confidence": 0.744,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure Database for MySQL",
+          "resource_type": "azurerm_mysql_active_directory_administrator",
+          "resource_count": 12,
+          "icon": {
+            "path": "databases/10122-icon-service-Azure-Database-MySQL-Server.svg",
+            "filename": "10122-icon-service-Azure-Database-MySQL-Server.svg",
+            "confidence": 0.718,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure Database for PostgreSQL",
+          "resource_type": "azurerm_postgresql_active_directory_administrator",
+          "resource_count": 13,
+          "icon": {
+            "path": "databases/10131-icon-service-Azure-Database-PostgreSQL-Server.svg",
+            "filename": "10131-icon-service-Azure-Database-PostgreSQL-Server.svg",
+            "confidence": 0.776,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure SQL Database",
+          "resource_type": "azurerm_mssql_database",
+          "resource_count": 24,
+          "icon": {
+            "path": "databases/10130-icon-service-SQL-Database.svg",
+            "filename": "10130-icon-service-SQL-Database.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure SQL Managed Instance",
+          "resource_type": "azurerm_mssql_managed_database",
+          "resource_count": 11,
+          "icon": {
+            "path": "databases/10136-icon-service-SQL-Managed-Instance.svg",
+            "filename": "10136-icon-service-SQL-Managed-Instance.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "SQL Server on Virtual Machines",
+          "resource_type": "azurerm_mssql_virtual_machine",
+          "resource_count": 3,
+          "icon": {
+            "path": "compute/10021-icon-service-Virtual-Machine.svg",
+            "filename": "10021-icon-service-Virtual-Machine.svg",
+            "confidence": 0.667,
+            "mapping_method": "fuzzy_match"
+          }
+        }
+      ]
+    },
+    "Developer Tools": {
+      "name": "Developer Tools",
+      "services_count": 7,
+      "total_resources": 27,
+      "category_icon_folder": "devops",
+      "services": [
+        {
+          "name": "Azure App Configuration",
+          "resource_type": "azurerm_app_configuration",
+          "resource_count": 3,
+          "icon": {
+            "path": "integration/10219-icon-service-App-Configuration.svg",
+            "filename": "10219-icon-service-App-Configuration.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Chaos Studio",
+          "resource_type": "azurerm_chaos_studio_capability",
+          "resource_count": 3,
+          "icon": {
+            "path": "other/02223-icon-service-Azure-Chaos-Studio.svg",
+            "filename": "02223-icon-service-Azure-Chaos-Studio.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure DevOps",
+          "resource_type": "azurerm_source_control_token",
+          "resource_count": 1,
+          "icon": {
+            "path": "devops/10261-icon-service-Azure-DevOps.svg",
+            "filename": "10261-icon-service-Azure-DevOps.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure DevTest Labs",
+          "resource_type": "azurerm_dev_test_global_vm_shutdown_schedule",
+          "resource_count": 7,
+          "icon": {
+            "path": "devops/10264-icon-service-DevTest-Labs.svg",
+            "filename": "10264-icon-service-DevTest-Labs.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Lab Services",
+          "resource_type": "azurerm_lab_service_lab",
+          "resource_count": 4,
+          "icon": {
+            "path": "devops/10265-icon-service-Lab-Services.svg",
+            "filename": "10265-icon-service-Lab-Services.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Load Testing",
+          "resource_type": "azurerm_load_test",
+          "resource_count": 1,
+          "icon": {
+            "path": "devops/02423-icon-service-Load-Testing.svg",
+            "filename": "02423-icon-service-Load-Testing.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Microsoft Dev Box",
+          "resource_type": "azurerm_dev_center",
+          "resource_count": 8,
+          "icon": {
+            "path": "other/03250-icon-service-Microsoft-Dev-Box.svg",
+            "filename": "03250-icon-service-Microsoft-Dev-Box.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        }
+      ]
+    },
+    "Hybrid + multicloud": {
+      "name": "Hybrid + multicloud",
+      "services_count": 3,
+      "total_resources": 14,
+      "category_icon_folder": "management + governance",
+      "services": [
+        {
+          "name": "Azure Arc",
+          "resource_type": "azurerm_arc_kubernetes_cluster",
+          "resource_count": 7,
+          "icon": {
+            "path": "management + governance/00756-icon-service-Azure-Arc.svg",
+            "filename": "00756-icon-service-Azure-Arc.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Stack HCI",
+          "resource_type": "azurerm_stack_hci_cluster",
+          "resource_count": 2,
+          "icon": {
+            "path": "iot/03293-icon-service-Azure-Stack-HCI-Sizer.svg",
+            "filename": "03293-icon-service-Azure-Stack-HCI-Sizer.svg",
+            "confidence": 0.75,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "System Center Virtual Machine Manager",
+          "resource_type": "azurerm_system_center_virtual_machine_manager_availability_set",
+          "resource_count": 5,
+          "icon": null
+        }
+      ]
+    },
+    "Identity": {
+      "name": "Identity",
+      "services_count": 5,
+      "total_resources": 11,
+      "category_icon_folder": "identity",
+      "services": [
+        {
+          "name": "Azure Active Directory B2C",
+          "resource_type": "azurerm_aadb2c_directory",
+          "resource_count": 1,
+          "icon": {
+            "path": "identity/10224-icon-service-Active-Directory-Connect-Health.svg",
+            "filename": "10224-icon-service-Active-Directory-Connect-Health.svg",
+            "confidence": 0.706,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure Active Directory Domain Services",
+          "resource_type": "azurerm_active_directory_domain_service",
+          "resource_count": 3,
+          "icon": {
+            "path": "identity/10222-icon-service-Entra-Domain-Services.svg",
+            "filename": "10222-icon-service-Entra-Domain-Services.svg",
+            "confidence": 0.642,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure RBAC",
+          "resource_type": "azurerm_role_assignment",
+          "resource_count": 3,
+          "icon": null
+        },
+        {
+          "name": "Managed Identities",
+          "resource_type": "azurerm_federated_identity_credential",
+          "resource_count": 2,
+          "icon": {
+            "path": "identity/10227-icon-service-Managed-Identities.svg",
+            "filename": "10227-icon-service-Managed-Identities.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Privileged Identity Management",
+          "resource_type": "azurerm_pim_active_role_assignment",
+          "resource_count": 2,
+          "icon": {
+            "path": "identity/02251-icon-service-Entra-Privleged-Identity-Management.svg",
+            "filename": "02251-icon-service-Entra-Privleged-Identity-Management.svg",
+            "confidence": 0.892,
+            "mapping_method": "fuzzy_match"
+          }
+        }
+      ]
+    },
+    "Integration": {
+      "name": "Integration",
+      "services_count": 5,
+      "total_resources": 85,
+      "category_icon_folder": "integration",
+      "services": [
+        {
+          "name": "API Management",
+          "resource_type": "azurerm_api_management",
+          "resource_count": 47,
+          "icon": {
+            "path": "general/10116-icon-service-Region-Management.svg",
+            "filename": "10116-icon-service-Region-Management.svg",
+            "confidence": 0.774,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure Relay",
+          "resource_type": "azurerm_relay_hybrid_connection",
+          "resource_count": 4,
+          "icon": {
+            "path": "integration/10209-icon-service-Relays.svg",
+            "filename": "10209-icon-service-Relays.svg",
+            "confidence": 0.909,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Event Grid",
+          "resource_type": "azurerm_eventgrid_domain",
+          "resource_count": 6,
+          "icon": {
+            "path": "integration/10206-icon-service-Event-Grid-Topics.svg",
+            "filename": "10206-icon-service-Event-Grid-Topics.svg",
+            "confidence": 0.741,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Logic Apps",
+          "resource_type": "azurerm_api_connection",
+          "resource_count": 18,
+          "icon": {
+            "path": "integration/02631-icon-service-Logic-Apps.svg",
+            "filename": "02631-icon-service-Logic-Apps.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Service Bus",
+          "resource_type": "azurerm_servicebus_namespace",
+          "resource_count": 10,
+          "icon": {
+            "path": "integration/10836-icon-service-Azure-Service-Bus.svg",
+            "filename": "10836-icon-service-Azure-Service-Bus.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        }
+      ]
+    },
+    "Internet of Things": {
+      "name": "Internet of Things",
+      "services_count": 8,
+      "total_resources": 36,
+      "category_icon_folder": "iot",
+      "services": [
+        {
+          "name": "Azure Defender for IoT",
+          "resource_type": "azurerm_iot_security_device_group",
+          "resource_count": 2,
+          "icon": {
+            "path": "other/03424-icon-service-Defender-RTU.svg",
+            "filename": "03424-icon-service-Defender-RTU.svg",
+            "confidence": 0.786,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure Digital Twins",
+          "resource_type": "azurerm_digital_twins_endpoint_eventgrid",
+          "resource_count": 5,
+          "icon": {
+            "path": "iot/01030-icon-service-Digital-Twins.svg",
+            "filename": "01030-icon-service-Digital-Twins.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure IoT Central",
+          "resource_type": "azurerm_iotcentral_application",
+          "resource_count": 3,
+          "icon": {
+            "path": "web/03291-icon-service-API-Center.svg",
+            "filename": "03291-icon-service-API-Center.svg",
+            "confidence": 0.667,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure Maps",
+          "resource_type": "azurerm_maps_account",
+          "resource_count": 2,
+          "icon": {
+            "path": "iot/10185-icon-service-Azure-Maps-Accounts.svg",
+            "filename": "10185-icon-service-Azure-Maps-Accounts.svg",
+            "confidence": 0.471,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Time Series Insights",
+          "resource_type": "azurerm_iot_time_series_insights_access_policy",
+          "resource_count": 6,
+          "icon": {
+            "path": "iot/10181-icon-service-Time-Series-Insights-Environments.svg",
+            "filename": "10181-icon-service-Time-Series-Insights-Environments.svg",
+            "confidence": 0.755,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Device Update for IoT Hub",
+          "resource_type": "azurerm_iothub_device_update_account",
+          "resource_count": 2,
+          "icon": {
+            "path": "other/02475-icon-service-Device-Update-IoT-Hub.svg",
+            "filename": "02475-icon-service-Device-Update-IoT-Hub.svg",
+            "confidence": 0.913,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "IoT Hub",
+          "resource_type": "azurerm_iothub",
+          "resource_count": 13,
+          "icon": {
+            "path": "iot/10182-icon-service-IoT-Hub.svg",
+            "filename": "10182-icon-service-IoT-Hub.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "IoT Hub Device Provisioning Service",
+          "resource_type": "azurerm_iothub_dps",
+          "resource_count": 3,
+          "icon": {
+            "path": "iot/10369-icon-service-Device-Provisioning-Services.svg",
+            "filename": "10369-icon-service-Device-Provisioning-Services.svg",
+            "confidence": 0.857,
+            "mapping_method": "fuzzy_match"
+          }
+        }
+      ]
+    },
+    "Management and Governance": {
+      "name": "Management and Governance",
+      "services_count": 24,
+      "total_resources": 139,
+      "category_icon_folder": "general",
+      "services": [
+        {
+          "name": "Application Insights",
+          "resource_type": "azurerm_application_insights",
+          "resource_count": 8,
+          "icon": {
+            "path": "devops/00012-icon-service-Application-Insights.svg",
+            "filename": "00012-icon-service-Application-Insights.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Automanage",
+          "resource_type": "azurerm_automanage_configuration",
+          "resource_count": 2,
+          "icon": {
+            "path": "compute/02112-icon-service-Automanaged-VM.svg",
+            "filename": "02112-icon-service-Automanaged-VM.svg",
+            "confidence": 0.833,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Automation",
+          "resource_type": "azurerm_automation_account",
+          "resource_count": 27,
+          "icon": {
+            "path": "security/00378-icon-service-Detonation.svg",
+            "filename": "00378-icon-service-Detonation.svg",
+            "confidence": 0.7,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure Blueprints",
+          "resource_type": "azurerm_blueprint_assignment",
+          "resource_count": 1,
+          "icon": {
+            "path": "management + governance/00006-icon-service-Blueprints.svg",
+            "filename": "00006-icon-service-Blueprints.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Dashboard",
+          "resource_type": "azurerm_dashboard",
+          "resource_count": 1,
+          "icon": {
+            "path": "general/10015-icon-service-Dashboard.svg",
+            "filename": "10015-icon-service-Dashboard.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Lighthouse",
+          "resource_type": "azurerm_lighthouse_assignment",
+          "resource_count": 2,
+          "icon": {
+            "path": "management + governance/00471-icon-service-Azure-Lighthouse.svg",
+            "filename": "00471-icon-service-Azure-Lighthouse.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Managed Grafana",
+          "resource_type": "azurerm_dashboard_grafana",
+          "resource_count": 1,
+          "icon": {
+            "path": "other/02905-icon-service-Azure-Managed-Grafana.svg",
+            "filename": "02905-icon-service-Azure-Managed-Grafana.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Marketplace",
+          "resource_type": "azurerm_marketplace_agreement",
+          "resource_count": 2,
+          "icon": {
+            "path": "general/10008-icon-service-Marketplace.svg",
+            "filename": "10008-icon-service-Marketplace.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Monitor",
+          "resource_type": "azurerm_log_analytics_cluster",
+          "resource_count": 34,
+          "icon": {
+            "path": "management + governance/00001-icon-service-Monitor.svg",
+            "filename": "00001-icon-service-Monitor.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Policy",
+          "resource_type": "azurerm_management_group_policy_assignment",
+          "resource_count": 15,
+          "icon": {
+            "path": "management + governance/10316-icon-service-Policy.svg",
+            "filename": "10316-icon-service-Policy.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Portal",
+          "resource_type": "azurerm_portal_dashboard",
+          "resource_count": 2,
+          "icon": {
+            "path": "other/02697-icon-service-Azure-Orbital.svg",
+            "filename": "02697-icon-service-Azure-Orbital.svg",
+            "confidence": 0.769,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure Resource Manager",
+          "resource_type": "azurerm_management_group_template_deployment",
+          "resource_count": 10,
+          "icon": {
+            "path": "other/02200-icon-service-Resource-Mover.svg",
+            "filename": "02200-icon-service-Resource-Mover.svg",
+            "confidence": 0.8,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure Update Manager",
+          "resource_type": "azurerm_maintenance_assignment_dedicated_host",
+          "resource_count": 5,
+          "icon": {
+            "path": "other/02846-icon-service-Update-Management-Center.svg",
+            "filename": "02846-icon-service-Update-Management-Center.svg",
+            "confidence": 0.737,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Cost Management",
+          "resource_type": "azurerm_billing_account_cost_management_export",
+          "resource_count": 10,
+          "icon": {
+            "path": "general/10019-icon-service-Cost-Management.svg",
+            "filename": "10019-icon-service-Cost-Management.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Custom Providers",
+          "resource_type": "azurerm_custom_provider",
+          "resource_count": 1,
+          "icon": {
+            "path": "ai + machine learning/00793-icon-service-Custom-Vision.svg",
+            "filename": "00793-icon-service-Custom-Vision.svg",
+            "confidence": 0.69,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Datadog",
+          "resource_type": "azurerm_datadog_monitor",
+          "resource_count": 3,
+          "icon": {
+            "path": "migrate/10094-icon-service-Data-Box.svg",
+            "filename": "10094-icon-service-Data-Box.svg",
+            "confidence": 0.667,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Log Analytics",
+          "resource_type": "azurerm_log_analytics_workspace",
+          "resource_count": 2,
+          "icon": {
+            "path": "analytics/00562-icon-service-Endpoint-Analytics.svg",
+            "filename": "00562-icon-service-Endpoint-Analytics.svg",
+            "confidence": 0.71,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Logz.io",
+          "resource_type": "azurerm_logz_monitor",
+          "resource_count": 4,
+          "icon": null
+        },
+        {
+          "name": "Managed Applications",
+          "resource_type": "azurerm_managed_application",
+          "resource_count": 2,
+          "icon": {
+            "path": "management + governance/10313-icon-service-Managed-Applications-Center.svg",
+            "filename": "10313-icon-service-Managed-Applications-Center.svg",
+            "confidence": 0.851,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Management Groups",
+          "resource_type": "azurerm_management_group",
+          "resource_count": 2,
+          "icon": {
+            "path": "general/10011-icon-service-Management-Groups.svg",
+            "filename": "10011-icon-service-Management-Groups.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "New Relic",
+          "resource_type": "azurerm_new_relic_monitor",
+          "resource_count": 2,
+          "icon": null
+        },
+        {
+          "name": "Resource Groups",
+          "resource_type": "azurerm_resource_group",
+          "resource_count": 1,
+          "icon": {
+            "path": "general/10007-icon-service-Resource-Groups.svg",
+            "filename": "10007-icon-service-Resource-Groups.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Resource Locks",
+          "resource_type": "azurerm_management_lock",
+          "resource_count": 1,
+          "icon": {
+            "path": "general/10007-icon-service-Resource-Groups.svg",
+            "filename": "10007-icon-service-Resource-Groups.svg",
+            "confidence": 0.759,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Subscriptions",
+          "resource_type": "azurerm_subscription",
+          "resource_count": 1,
+          "icon": {
+            "path": "general/10002-icon-service-Subscriptions.svg",
+            "filename": "10002-icon-service-Subscriptions.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        }
+      ]
+    },
+    "Media": {
+      "name": "Media",
+      "services_count": 2,
+      "total_resources": 14,
+      "category_icon_folder": "other",
+      "services": [
+        {
+          "name": "Azure Video Analyzer",
+          "resource_type": "azurerm_video_analyzer",
+          "resource_count": 2,
+          "icon": {
+            "path": "other/00712-icon-service-Video-Analyzers.svg",
+            "filename": "00712-icon-service-Video-Analyzers.svg",
+            "confidence": 0.966,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Media Services",
+          "resource_type": "azurerm_media_asset",
+          "resource_count": 12,
+          "icon": {
+            "path": "web/10309-icon-service-Azure-Media-Service.svg",
+            "filename": "10309-icon-service-Azure-Media-Service.svg",
+            "confidence": 0.963,
+            "mapping_method": "fuzzy_match"
+          }
+        }
+      ]
+    },
+    "Migration": {
+      "name": "Migration",
+      "services_count": 4,
+      "total_resources": 24,
+      "category_icon_folder": "databases",
+      "services": [
+        {
+          "name": "Azure Database Migration Service",
+          "resource_type": "azurerm_database_migration_project",
+          "resource_count": 2,
+          "icon": {
+            "path": "databases/10133-icon-service-Azure-Database-Migration-Services.svg",
+            "filename": "10133-icon-service-Azure-Database-Migration-Services.svg",
+            "confidence": 0.981,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Site Recovery",
+          "resource_type": "azurerm_site_recovery_fabric",
+          "resource_count": 14,
+          "icon": {
+            "path": "networking/02882-icon-service-DNS-Private-Resolver.svg",
+            "filename": "02882-icon-service-DNS-Private-Resolver.svg",
+            "confidence": 0.667,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure Stack Edge",
+          "resource_type": "azurerm_databox_edge_device",
+          "resource_count": 2,
+          "icon": {
+            "path": "integration/10095-icon-service-Azure-Stack-Edge.svg",
+            "filename": "10095-icon-service-Azure-Stack-Edge.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Storage Mover",
+          "resource_type": "azurerm_storage_mover",
+          "resource_count": 6,
+          "icon": {
+            "path": "other/03091-icon-service-Azure-Storage-Mover.svg",
+            "filename": "03091-icon-service-Azure-Storage-Mover.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        }
+      ]
+    },
+    "Mixed Reality": {
+      "name": "Mixed Reality",
+      "services_count": 1,
+      "total_resources": 1,
+      "category_icon_folder": "mixed reality",
+      "services": [
+        {
+          "name": "Azure Spatial Anchors",
+          "resource_type": "azurerm_spatial_anchors_account",
+          "resource_count": 1,
+          "icon": {
+            "path": "mixed reality/10352-icon-service-Spatial-Anchor-Accounts.svg",
+            "filename": "10352-icon-service-Spatial-Anchor-Accounts.svg",
+            "confidence": 0.789,
+            "mapping_method": "fuzzy_match"
+          }
+        }
+      ]
+    },
+    "Mobile": {
+      "name": "Mobile",
+      "services_count": 2,
+      "total_resources": 14,
+      "category_icon_folder": "hybrid + multicloud",
+      "services": [
+        {
+          "name": "Azure Private 5G Core",
+          "resource_type": "azurerm_mobile_network",
+          "resource_count": 11,
+          "icon": {
+            "path": "hybrid + multicloud/03248-icon-service-Azure-Operator-5G-Core.svg",
+            "filename": "03248-icon-service-Azure-Operator-5G-Core.svg",
+            "confidence": 0.774,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Notification Hubs",
+          "resource_type": "azurerm_notification_hub",
+          "resource_count": 3,
+          "icon": {
+            "path": "app services/10045-icon-service-Notification-Hubs.svg",
+            "filename": "10045-icon-service-Notification-Hubs.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        }
+      ]
+    },
+    "Networking": {
+      "name": "Networking",
+      "services_count": 34,
+      "total_resources": 167,
+      "category_icon_folder": "networking",
+      "services": [
+        {
+          "name": "Application Gateway",
+          "resource_type": "azurerm_application_gateway",
+          "resource_count": 1,
+          "icon": {
+            "path": "networking/10076-icon-service-Application-Gateways.svg",
+            "filename": "10076-icon-service-Application-Gateways.svg",
+            "confidence": 0.974,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Application Security Groups",
+          "resource_type": "azurerm_application_security_group",
+          "resource_count": 1,
+          "icon": {
+            "path": "security/10244-icon-service-Application-Security-Groups.svg",
+            "filename": "10244-icon-service-Application-Security-Groups.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Bastion",
+          "resource_type": "azurerm_bastion_host",
+          "resource_count": 1,
+          "icon": {
+            "path": "networking/02422-icon-service-Bastions.svg",
+            "filename": "02422-icon-service-Bastions.svg",
+            "confidence": 0.933,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure DDoS Protection",
+          "resource_type": "azurerm_network_ddos_protection_plan",
+          "resource_count": 1,
+          "icon": {
+            "path": "networking/10072-icon-service-DDoS-Protection-Plans.svg",
+            "filename": "10072-icon-service-DDoS-Protection-Plans.svg",
+            "confidence": 0.833,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure DNS",
+          "resource_type": "azurerm_dns_a_record",
+          "resource_count": 10,
+          "icon": {
+            "path": "networking/10064-icon-service-DNS-Zones.svg",
+            "filename": "10064-icon-service-DNS-Zones.svg",
+            "confidence": 0.5,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure DNS Private Resolver",
+          "resource_type": "azurerm_private_dns_resolver",
+          "resource_count": 6,
+          "icon": {
+            "path": "networking/02882-icon-service-DNS-Private-Resolver.svg",
+            "filename": "02882-icon-service-DNS-Private-Resolver.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Firewall",
+          "resource_type": "azurerm_firewall",
+          "resource_count": 4,
+          "icon": {
+            "path": "networking/10084-icon-service-Firewalls.svg",
+            "filename": "10084-icon-service-Firewalls.svg",
+            "confidence": 0.941,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Firewall Manager",
+          "resource_type": "azurerm_firewall_policy",
+          "resource_count": 2,
+          "icon": {
+            "path": "networking/00271-icon-service-Azure-Firewall-Manager.svg",
+            "filename": "00271-icon-service-Azure-Firewall-Manager.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Front Door",
+          "resource_type": "azurerm_cdn_frontdoor_custom_domain",
+          "resource_count": 17,
+          "icon": {
+            "path": "networking/10073-icon-service-Front-Door-and-CDN-Profiles.svg",
+            "filename": "10073-icon-service-Front-Door-and-CDN-Profiles.svg",
+            "confidence": 0.541,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Network Function Manager",
+          "resource_type": "azurerm_network_function_azure_traffic_collector",
+          "resource_count": 2,
+          "icon": {
+            "path": "other/02740-icon-service-Azure-Network-Function-Manager.svg",
+            "filename": "02740-icon-service-Azure-Network-Function-Manager.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Orbital",
+          "resource_type": "azurerm_orbital_contact",
+          "resource_count": 3,
+          "icon": {
+            "path": "other/02697-icon-service-Azure-Orbital.svg",
+            "filename": "02697-icon-service-Azure-Orbital.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Private DNS",
+          "resource_type": "azurerm_private_dns_a_record",
+          "resource_count": 9,
+          "icon": {
+            "path": "other/02579-icon-service-Private-Endpoints.svg",
+            "filename": "02579-icon-service-Private-Endpoints.svg",
+            "confidence": 0.786,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure Route Server",
+          "resource_type": "azurerm_route_server",
+          "resource_count": 2,
+          "icon": {
+            "path": "ai + machine learning/10165-icon-service-Bot-Services.svg",
+            "filename": "10165-icon-service-Bot-Services.svg",
+            "confidence": 0.667,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure Virtual Network Manager",
+          "resource_type": "azurerm_network_manager",
+          "resource_count": 11,
+          "icon": {
+            "path": "networking/10061-icon-service-Virtual-Networks.svg",
+            "filename": "10061-icon-service-Virtual-Networks.svg",
+            "confidence": 0.769,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Cloud NGFW by Palo Alto Networks",
+          "resource_type": "azurerm_palo_alto_local_rulestack",
+          "resource_count": 12,
+          "icon": null
+        },
+        {
+          "name": "Content Delivery Network",
+          "resource_type": "azurerm_cdn_endpoint",
+          "resource_count": 3,
+          "icon": {
+            "path": "ai + machine learning/00795-icon-service-Content-Moderators.svg",
+            "filename": "00795-icon-service-Content-Moderators.svg",
+            "confidence": 0.667,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "ExpressRoute",
+          "resource_type": "azurerm_express_route_circuit",
+          "resource_count": 8,
+          "icon": {
+            "path": "other/00903-icon-service-ExpressRoute-Direct.svg",
+            "filename": "00903-icon-service-ExpressRoute-Direct.svg",
+            "confidence": 0.774,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "IP Groups",
+          "resource_type": "azurerm_ip_group",
+          "resource_count": 2,
+          "icon": {
+            "path": "networking/00701-icon-service-IP-Groups.svg",
+            "filename": "00701-icon-service-IP-Groups.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Load Balancer",
+          "resource_type": "azurerm_application_load_balancer",
+          "resource_count": 11,
+          "icon": {
+            "path": "networking/10062-icon-service-Load-Balancers.svg",
+            "filename": "10062-icon-service-Load-Balancers.svg",
+            "confidence": 0.963,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "NAT Gateway",
+          "resource_type": "azurerm_nat_gateway",
+          "resource_count": 3,
+          "icon": {
+            "path": "integration/00691-icon-service-Azure-Databox-Gateway.svg",
+            "filename": "00691-icon-service-Azure-Databox-Gateway.svg",
+            "confidence": 0.769,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Network Interfaces",
+          "resource_type": "azurerm_network_interface",
+          "resource_count": 6,
+          "icon": {
+            "path": "networking/10080-icon-service-Network-Interfaces.svg",
+            "filename": "10080-icon-service-Network-Interfaces.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Network Profile",
+          "resource_type": "azurerm_network_profile",
+          "resource_count": 1,
+          "icon": {
+            "path": "app services/00056-icon-service-CDN-Profiles.svg",
+            "filename": "00056-icon-service-CDN-Profiles.svg",
+            "confidence": 0.667,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Network Security Groups",
+          "resource_type": "azurerm_network_security_group",
+          "resource_count": 2,
+          "icon": {
+            "path": "networking/10067-icon-service-Network-Security-Groups.svg",
+            "filename": "10067-icon-service-Network-Security-Groups.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Network Watcher",
+          "resource_type": "azurerm_network_connection_monitor",
+          "resource_count": 6,
+          "icon": {
+            "path": "monitor/10066-icon-service-Network-Watcher.svg",
+            "filename": "10066-icon-service-Network-Watcher.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Private Link",
+          "resource_type": "azurerm_private_endpoint",
+          "resource_count": 3,
+          "icon": {
+            "path": "networking/00427-icon-service-Private-Link.svg",
+            "filename": "00427-icon-service-Private-Link.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Public IP Addresses",
+          "resource_type": "azurerm_custom_ip_prefix",
+          "resource_count": 2,
+          "icon": {
+            "path": "networking/10069-icon-service-Public-IP-Addresses.svg",
+            "filename": "10069-icon-service-Public-IP-Addresses.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Public IP Prefixes",
+          "resource_type": "azurerm_public_ip_prefix",
+          "resource_count": 1,
+          "icon": {
+            "path": "networking/10372-icon-service-Public-IP-Prefixes.svg",
+            "filename": "10372-icon-service-Public-IP-Prefixes.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Route Filters",
+          "resource_type": "azurerm_route_filter",
+          "resource_count": 1,
+          "icon": {
+            "path": "networking/10071-icon-service-Route-Filters.svg",
+            "filename": "10071-icon-service-Route-Filters.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Route Tables",
+          "resource_type": "azurerm_route",
+          "resource_count": 2,
+          "icon": {
+            "path": "networking/10082-icon-service-Route-Tables.svg",
+            "filename": "10082-icon-service-Route-Tables.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Traffic Manager",
+          "resource_type": "azurerm_traffic_manager_azure_endpoint",
+          "resource_count": 4,
+          "icon": {
+            "path": "networking/10065-icon-service-Traffic-Manager-Profiles.svg",
+            "filename": "10065-icon-service-Traffic-Manager-Profiles.svg",
+            "confidence": 0.769,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "VPN Gateway",
+          "resource_type": "azurerm_local_network_gateway",
+          "resource_count": 9,
+          "icon": {
+            "path": "networking/10076-icon-service-Application-Gateways.svg",
+            "filename": "10076-icon-service-Application-Gateways.svg",
+            "confidence": 0.645,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Virtual Network",
+          "resource_type": "azurerm_subnet",
+          "resource_count": 8,
+          "icon": {
+            "path": "networking/10061-icon-service-Virtual-Networks.svg",
+            "filename": "10061-icon-service-Virtual-Networks.svg",
+            "confidence": 0.968,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Virtual WAN",
+          "resource_type": "azurerm_point_to_site_vpn_gateway",
+          "resource_count": 12,
+          "icon": {
+            "path": "networking/10353-icon-service-Virtual-WANs.svg",
+            "filename": "10353-icon-service-Virtual-WANs.svg",
+            "confidence": 0.957,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Web Application Firewall",
+          "resource_type": "azurerm_web_application_firewall_policy",
+          "resource_count": 1,
+          "icon": {
+            "path": "networking/10362-icon-service-Web-Application-Firewall-Policies(WAF).svg",
+            "filename": "10362-icon-service-Web-Application-Firewall-Policies(WAF).svg",
+            "confidence": 0.787,
+            "mapping_method": "exact_name_match"
+          }
+        }
+      ]
+    },
+    "Security": {
+      "name": "Security",
+      "services_count": 8,
+      "total_resources": 61,
+      "category_icon_folder": "other",
+      "services": [
+        {
+          "name": "Azure Attestation",
+          "resource_type": "azurerm_attestation_provider",
+          "resource_count": 1,
+          "icon": {
+            "path": "other/10422-icon-service-AzureAttestation.svg",
+            "filename": "10422-icon-service-AzureAttestation.svg",
+            "confidence": 0.815,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Confidential Ledger",
+          "resource_type": "azurerm_confidential_ledger",
+          "resource_count": 1,
+          "icon": {
+            "path": "other/02668-icon-service-Confidential-Ledgers.svg",
+            "filename": "02668-icon-service-Confidential-Ledgers.svg",
+            "confidence": 0.974,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Dedicated HSM",
+          "resource_type": "azurerm_key_vault_managed_hardware_security_module",
+          "resource_count": 4,
+          "icon": {
+            "path": "other/02322-icon-service-Dedicated-HSM.svg",
+            "filename": "02322-icon-service-Dedicated-HSM.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Dedicated HSM",
+          "resource_type": "azurerm_dedicated_hardware_security_module",
+          "resource_count": 1,
+          "icon": {
+            "path": "other/02322-icon-service-Dedicated-HSM.svg",
+            "filename": "02322-icon-service-Dedicated-HSM.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Key Vault",
+          "resource_type": "azurerm_key_vault",
+          "resource_count": 9,
+          "icon": {
+            "path": "security/10245-icon-service-Key-Vaults.svg",
+            "filename": "10245-icon-service-Key-Vaults.svg",
+            "confidence": 0.947,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Microsoft Defender for Cloud",
+          "resource_type": "azurerm_security_center_assessment",
+          "resource_count": 12,
+          "icon": {
+            "path": "security/10241-icon-service-Microsoft-Defender-for-Cloud.svg",
+            "filename": "10241-icon-service-Microsoft-Defender-for-Cloud.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Microsoft Defender for Identity",
+          "resource_type": "azurerm_advanced_threat_protection",
+          "resource_count": 1,
+          "icon": {
+            "path": "security/02247-icon-service-Microsoft-Defender-for-IoT.svg",
+            "filename": "02247-icon-service-Microsoft-Defender-for-IoT.svg",
+            "confidence": 0.877,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Microsoft Sentinel",
+          "resource_type": "azurerm_sentinel_alert_rule_anomaly_built_in",
+          "resource_count": 32,
+          "icon": {
+            "path": "security/03336-icon-service-Microsoft-Defender-EASM.svg",
+            "filename": "03336-icon-service-Microsoft-Defender-EASM.svg",
+            "confidence": 0.634,
+            "mapping_method": "fuzzy_match"
+          }
+        }
+      ]
+    },
+    "Storage": {
+      "name": "Storage",
+      "services_count": 14,
+      "total_resources": 69,
+      "category_icon_folder": "storage",
+      "services": [
+        {
+          "name": "Azure Backup",
+          "resource_type": "azurerm_backup_container_storage_account",
+          "resource_count": 20,
+          "icon": {
+            "path": "other/02361-icon-service-Backup-Vault.svg",
+            "filename": "02361-icon-service-Backup-Vault.svg",
+            "confidence": 0.667,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Elastic SAN",
+          "resource_type": "azurerm_elastic_san",
+          "resource_count": 3,
+          "icon": {
+            "path": "other/03190-icon-service-Elastic-SAN.svg",
+            "filename": "03190-icon-service-Elastic-SAN.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure File Sync",
+          "resource_type": "azurerm_storage_sync",
+          "resource_count": 4,
+          "icon": {
+            "path": "general/10801-icon-service-Files.svg",
+            "filename": "10801-icon-service-Files.svg",
+            "confidence": 0.714,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure HPC Cache",
+          "resource_type": "azurerm_hpc_cache",
+          "resource_count": 5,
+          "icon": {
+            "path": "storage/00776-icon-service-Azure-HCP-Cache.svg",
+            "filename": "00776-icon-service-Azure-HCP-Cache.svg",
+            "confidence": 0.889,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure Managed Lustre",
+          "resource_type": "azurerm_managed_lustre_file_system",
+          "resource_count": 1,
+          "icon": {
+            "path": "new icons/03675-icon-service-Azure-Managed-Redis.svg",
+            "filename": "03675-icon-service-Azure-Managed-Redis.svg",
+            "confidence": 0.741,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure NetApp Files",
+          "resource_type": "azurerm_netapp_account",
+          "resource_count": 8,
+          "icon": {
+            "path": "storage/10096-icon-service-Azure-NetApp-Files.svg",
+            "filename": "10096-icon-service-Azure-NetApp-Files.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Blob Storage",
+          "resource_type": "azurerm_storage_blob",
+          "resource_count": 4,
+          "icon": {
+            "path": "general/10781-icon-service-Blob-Page.svg",
+            "filename": "10781-icon-service-Blob-Page.svg",
+            "confidence": 0.762,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Data Lake Storage",
+          "resource_type": "azurerm_storage_data_lake_gen2_filesystem",
+          "resource_count": 2,
+          "icon": {
+            "path": "storage/10090-icon-service-Data-Lake-Storage-Gen1.svg",
+            "filename": "10090-icon-service-Data-Lake-Storage-Gen1.svg",
+            "confidence": 0.872,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Disk Pool",
+          "resource_type": "azurerm_disk_pool",
+          "resource_count": 4,
+          "icon": {
+            "path": "other/02560-icon-service-Disk-Pool.svg",
+            "filename": "02560-icon-service-Disk-Pool.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "File Storage",
+          "resource_type": "azurerm_storage_share",
+          "resource_count": 3,
+          "icon": {
+            "path": "storage/10400-icon-service-Azure-Fileshares.svg",
+            "filename": "10400-icon-service-Azure-Fileshares.svg",
+            "confidence": 0.636,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Managed Disks",
+          "resource_type": "azurerm_disk_access",
+          "resource_count": 5,
+          "icon": {
+            "path": "new icons/03675-icon-service-Azure-Managed-Redis.svg",
+            "filename": "03675-icon-service-Azure-Managed-Redis.svg",
+            "confidence": 0.846,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Queue Storage",
+          "resource_type": "azurerm_storage_queue",
+          "resource_count": 1,
+          "icon": {
+            "path": "general/10840-icon-service-Storage-Queue.svg",
+            "filename": "10840-icon-service-Storage-Queue.svg",
+            "confidence": 0.6,
+            "mapping_method": "keyword_match"
+          }
+        },
+        {
+          "name": "Storage Accounts",
+          "resource_type": "azurerm_storage_account",
+          "resource_count": 7,
+          "icon": {
+            "path": "storage/10086-icon-service-Storage-Accounts.svg",
+            "filename": "10086-icon-service-Storage-Accounts.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Table Storage",
+          "resource_type": "azurerm_storage_table",
+          "resource_count": 2,
+          "icon": {
+            "path": "storage/10090-icon-service-Data-Lake-Storage-Gen1.svg",
+            "filename": "10090-icon-service-Data-Lake-Storage-Gen1.svg",
+            "confidence": 0.686,
+            "mapping_method": "fuzzy_match"
+          }
+        }
+      ]
+    },
+    "Web": {
+      "name": "Web",
+      "services_count": 12,
+      "total_resources": 83,
+      "category_icon_folder": "other",
+      "services": [
+        {
+          "name": "App Service",
+          "resource_type": "azurerm_app_service",
+          "resource_count": 24,
+          "icon": {
+            "path": "app services/10035-icon-service-App-Services.svg",
+            "filename": "10035-icon-service-App-Services.svg",
+            "confidence": 0.957,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "App Service Certificates",
+          "resource_type": "azurerm_app_service_certificate_order",
+          "resource_count": 1,
+          "icon": {
+            "path": "app services/00049-icon-service-App-Service-Certificates.svg",
+            "filename": "00049-icon-service-App-Service-Certificates.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "App Service Environment",
+          "resource_type": "azurerm_app_service_environment",
+          "resource_count": 2,
+          "icon": {
+            "path": "app services/10047-icon-service-App-Service-Environments.svg",
+            "filename": "10047-icon-service-App-Service-Environments.svg",
+            "confidence": 0.979,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Communications Gateway",
+          "resource_type": "azurerm_voice_services_communications_gateway",
+          "resource_count": 2,
+          "icon": {
+            "path": "networking/03311-icon-service-Azure-Communications-Gateway.svg",
+            "filename": "03311-icon-service-Azure-Communications-Gateway.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Fluid Relay",
+          "resource_type": "azurerm_fluid_relay_server",
+          "resource_count": 1,
+          "icon": {
+            "path": "other/03423-icon-service-Defender-Relay.svg",
+            "filename": "03423-icon-service-Defender-Relay.svg",
+            "confidence": 0.64,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure SignalR Service",
+          "resource_type": "azurerm_signalr_service",
+          "resource_count": 5,
+          "icon": {
+            "path": "other/02658-icon-service-FHIR-Service.svg",
+            "filename": "02658-icon-service-FHIR-Service.svg",
+            "confidence": 0.741,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Azure Spring Apps",
+          "resource_type": "azurerm_spring_cloud_accelerator",
+          "resource_count": 30,
+          "icon": {
+            "path": "compute/10370-icon-service-Azure-Spring-Apps.svg",
+            "filename": "10370-icon-service-Azure-Spring-Apps.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Azure Web PubSub",
+          "resource_type": "azurerm_web_pubsub",
+          "resource_count": 6,
+          "icon": {
+            "path": "other/10846-icon-service-Web-Jobs.svg",
+            "filename": "10846-icon-service-Web-Jobs.svg",
+            "confidence": 0.667,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "Communication Services",
+          "resource_type": "azurerm_communication_service",
+          "resource_count": 2,
+          "icon": {
+            "path": "other/00968-icon-service-Azure-Communication-Services.svg",
+            "filename": "00968-icon-service-Azure-Communication-Services.svg",
+            "confidence": 1.0,
+            "mapping_method": "exact_name_match"
+          }
+        },
+        {
+          "name": "Email Communication Services",
+          "resource_type": "azurerm_email_communication_service",
+          "resource_count": 2,
+          "icon": {
+            "path": "other/00968-icon-service-Azure-Communication-Services.svg",
+            "filename": "00968-icon-service-Azure-Communication-Services.svg",
+            "confidence": 0.88,
+            "mapping_method": "fuzzy_match"
+          }
+        },
+        {
+          "name": "NGINX",
+          "resource_type": "azurerm_nginx_certificate",
+          "resource_count": 3,
+          "icon": null
+        },
+        {
+          "name": "Static Web Apps",
+          "resource_type": "azurerm_static_site",
+          "resource_count": 5,
+          "icon": {
+            "path": "web/01007-icon-service-Static-Apps.svg",
+            "filename": "01007-icon-service-Static-Apps.svg",
+            "confidence": 0.846,
+            "mapping_method": "fuzzy_match"
+          }
+        }
+      ]
+    }
+  },
+  "mapping_stats": {
+    "total_services": 179,
+    "mapped_services": 171,
+    "unmapped_services": 8,
+    "high_confidence": 116,
+    "medium_confidence": 52,
+    "low_confidence": 3
+  }
+}
