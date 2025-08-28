@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Terraform Builder</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .sidebar { width: 300px; background: #f8f9fa; }
+        .canvas-area { 
+            background: #fff; 
+            min-height: 500px;
+            border: 2px dashed #dee2e6;
+            background-image: radial-gradient(circle, #dee2e6 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .resource-card {
+            background: white;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 5px 0;
+            cursor: grab;
+        }
+        .resource-card:hover { border-color: #0d6efd; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 bg-primary text-white p-3">
+                <h4>Azure Terraform Builder MVP</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="sidebar col-3 p-3">
+                <h6>Azure Resources</h6>
+                <div class="resource-card" draggable="true" data-resource="vm">
+                    🖥️ Virtual Machine
+                </div>
+                <div class="resource-card" draggable="true" data-resource="storage">
+                    💾 Storage Account  
+                </div>
+                <div class="resource-card" draggable="true" data-resource="database">
+                    🗄️ Database
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="p-3">
+                    <button class="btn btn-success" onclick="generateTerraform()">Generate Terraform</button>
+                </div>
+                <div class="canvas-area p-3" id="canvas" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <p class="text-muted">Drag resources here</p>
+                </div>
+                <div class="mt-3 p-3">
+                    <h6>Generated Terraform:</h6>
+                    <pre id="terraformCode" class="bg-light p-3">// Code will appear here</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let resources = [];
+        
+        function allowDrop(ev) { ev.preventDefault(); }
+        
+        function drop(ev) {
+            ev.preventDefault();
+            const resourceType = ev.dataTransfer.getData("text");
+            addResource(resourceType, ev.offsetX, ev.offsetY);
+        }
+        
+        document.addEventListener('dragstart', function(e) {
+            if (e.target.classList.contains('resource-card')) {
+                e.dataTransfer.setData("text", e.target.dataset.resource);
+            }
+        });
+        
+        function addResource(type, x, y) {
+            const resource = { type, x, y, id: Date.now() };
+            resources.push(resource);
+            
+            const canvas = document.getElementById('canvas');
+            const div = document.createElement('div');
+            div.style.position = 'absolute';
+            div.style.left = x + 'px';
+            div.style.top = y + 'px';
+            div.style.background = 'white';
+            div.style.border = '2px solid #0d6efd';
+            div.style.padding = '10px';
+            div.style.borderRadius = '8px';
+            div.innerHTML = getResourceIcon(type) + ' ' + type;
+            canvas.appendChild(div);
+        }
+        
+        function getResourceIcon(type) {
+            const icons = { vm: '🖥️', storage: '💾', database: '🗄️' };
+            return icons[type] || '📦';
+        }
+        
+        function generateTerraform() {
+            let code = 'terraform {\n  required_providers {\n    azurerm = {\n      source = "hashicorp/azurerm"\n    }\n  }\n}\n\n';
+            
+            resources.forEach((resource, i) => {
+                code += `resource "azurerm_${resource.type}" "${resource.type}_${i}" {\n`;
+                code += `  name = "${resource.type}_${i}"\n`;
+                code += `  location = "East US"\n`;
+                code += `  resource_group_name = "rg-terraform"\n`;
+                code += '}\n\n';
+            });
+            
+            document.getElementById('terraformCode').textContent = code;
+        }
+    </script>
+</body>
+</html>
